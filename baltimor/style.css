@@ -124,6 +124,7 @@ header{
     display: none;
     color: var(--cor5);
     cursor: pointer;
+    transition: 1s;
 }
 
 .icone_bar:hover{
@@ -245,8 +246,7 @@ header{
 .lamar_img img{
     width: min(300px, 50vw);
     filter: drop-shadow(7px 7px 1px black)grayscale(80%);
-    transition: scale 1s ease, filter 1s cubic-bezier
-    (0.175, 0.885, 0.32, 1.275);
+    transition: 1s;
 }
 
 .lamar_img img:hover{
