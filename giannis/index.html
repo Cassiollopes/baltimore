@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giannis A.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg">
+        <div class="hidden">
+            <div class="texto-P">
+                <h1>Giannis Antetokounmpo</h1>
+                <p>Giannis Sina Ugo Antetokounmpo (em grego: Γιάννης Αντετοκούνμπο; Atenas, 6 de dezembro de 1994)[1] é um jogador greco-nigeriano profissional de basquetebol que atualmente joga pelo Milwaukee Bucks da National Basketball Association (NBA).[2]
+                </p>
+                <br>
+                <br>
+                <p>Nascido na Grécia de pais nigerianos, Antetokounmpo começou a jogar basquete nas equipes juvenis do Filathlitikos em Atenas. Em 2011, ele começou a jogar pela equipe sênior do clube antes de entrar no draft da NBA de 2013, onde foi selecionado pelos Bucks como a 15º escolha geral. A combinação de tamanho, velocidade e habilidades de manuseio de bola de Antetokounmpo levou ao seu apelido de "Greek Freak (Aberração Grega)".
+                </p>
+            </div>
+        </div>
+        
+        <div class="hidden">
+            <div class="Giannis">
+                <img src="https://cdn.nba.com/headshots/nba/latest/1040x760/203507.png" alt="">
+            </div>
+        </div>
+    </div>
+    
+    <script>
+
+        var myObserver = new IntersectionObserver((observar) =>{
+            observar.forEach((entry) =>{
+                if(entry.isIntersecting){
+                    entry.target.classList.add('show');
+                }else{
+                    entry.target.classList.remove('show');
+                }
+            })
+        })
+        var elementos = document.querySelectorAll('.hidden');
+
+        elementos.forEach( (element) => myObserver.observe(element))
+    </script>
+</body>
+</html>

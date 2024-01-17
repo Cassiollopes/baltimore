@@ -1,0 +1,50 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.bg{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.texto-P h1{
+    margin: 100px 0;
+    text-align: center;
+    font-size: 5rem;
+}
+
+.texto-P p{
+    font-size: 2rem;
+    text-align: justify;
+}
+
+.texto-P{
+    margin: 150px 0px;
+}
+
+.giannis{
+    text-align: center;
+}
+
+.giannis img{
+    max-width: 600px;
+}
+
+.hidden{
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateX(-100%);
+}
+
+.show{
+    transform: translateX(0);
+    filter: blur(0);
+    opacity: 1;
+    transition: all 2s;
+}
