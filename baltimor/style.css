@@ -307,10 +307,17 @@ header{
         display: inline-block;
     }
 
-    .animacao-h1{
+    .oi{
         margin-left: 50px;
         margin-right: 70px;
-        transition: 1s;
+        transform: translateX(-130%);
+        filter: blur(10px);
+    }
+
+    .animacao-h1{
+        filter: blur(0px);
+        transform: translateX(0);
+        transition: 2s;
     }
 
     .lamar_info{
