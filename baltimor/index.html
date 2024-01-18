@@ -50,7 +50,7 @@
                 <div class="info_d">
                     <p>Jackson foi selecionado na trigésima-segunda escolha na primeira rodada do draft da NFL de 2018 pelos Ravens. Inicialmente escalado como reserva no seu ano de novato, ele se tornou o quarterback titular de Baltimore em novembro após Joe Flacco se machucar. Rapidamente ele ganhou a posição de titular em definitivo, reenergizando o ataque dos Ravens. Analistas elogiam o físico e a inteligência de Lamar Jackson, que se tornou o quarterback mais novo a jogar uma partida de pós-temporada e o segundo QB a atingir a marca de mil jardas terrestres acumuladas numa temporada, quebrando o recorde anterior de Michael Vick, correndo para 1063 jardas. Em 2019, Jackson se juntou a Patrick Mahomes, Cam Newton e Steve McNair como os únicos quatro quarterbacks afro-americanos a ganhar o troféu de MVP de uma temporada da NFL.</p>
                     <br>
-                    <p>Em abril de 2023, Lamar Jackson renovou seu contrato com o Baltimore Ravens, totalizando US$ 260 milhões de dólares (US$ 185 milhões garantidos) por cinco anos, fazendo dele o jogador mais bem pago da história da NFL até aquele momento.</p>
+                    <p>Em abril de 2023, Lamar Jackson renovou seu contrato com o Baltimore Ravens, totalizando US$ 260 milhões de dólares (US$ 185 milhões garantidos) por cinco anos, fazendo dele o jogador mais bem pago da história da NFL até aquele momento.<span>Ver menos...</span></p>
                 </div>
             </div>
         </div>
@@ -72,18 +72,22 @@
                 .classList.add('animacao-lamar');
            },500);
 
-        document.querySelector('.lamar_info span')
+        document.querySelectorAll('.lamar_info span')[0]
         .addEventListener('click', ()=>{
             var infoD = document.querySelector('.info_d');
             var span = document.querySelector('.lamar_info span');
 
-            if(infoD.classList.contains('animacao-info_d')){
-                infoD.classList.remove('animacao-info_d');
-                span.innerHTML = 'Ver mais...';
-            }else{
-                infoD.classList.add('animacao-info_d');
-                span.innerHTML = 'Ver menos...';
-            }        
+            infoD.classList.add('animacao-info_d');
+            span.style.opacity = 0;
+        })
+
+        document.querySelectorAll('.lamar_info span')[1]
+        .addEventListener('click', ()=>{
+            var infoD = document.querySelector('.info_d');
+            var span = document.querySelectorAll('.lamar_info span')[0];
+
+            infoD.classList.remove('animacao-info_d');
+            span.style.opacity = 1;
         })
 
         document.querySelector('.icone_bar')
@@ -93,8 +97,10 @@
 
             if(menu_flutu.classList.contains('show-menu_flutu')){
                 menu_flutu.classList.remove('show-menu_flutu');
+                bar.style.color = 'White';
             }else{
                 menu_flutu.classList.add('show-menu_flutu');
+                bar.style.color = 'gray';
             }        
         })
     </script>
