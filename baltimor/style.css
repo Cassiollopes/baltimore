@@ -289,7 +289,7 @@ header{
     }
 
     .lamar_img img{
-        padding: 0 70px;
+        padding-inline: 60px;
     }
 
     .info_d{
