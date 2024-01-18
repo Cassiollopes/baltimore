@@ -1,11 +1,12 @@
+
     setTimeout(()=>{
-        document.querySelectorAll('.lamar_info')[0]
-            .classList.add('animacao-lamarinfo');
-            document.querySelectorAll('.oi')[0]
-            .classList.add('animacao-h1');
-            document.querySelectorAll('.lamar_img')[0]
-            .classList.add('animacao-lamar');
-        },500);
+    document.querySelectorAll('.lamar_info')[0]
+        .classList.add('animacao-lamarinfo');
+        document.querySelectorAll('.oi')[0]
+        .classList.add('animacao-h1');
+        document.querySelectorAll('.lamar_img')[0]
+        .classList.add('animacao-lamar');
+    },500);
 
     document.querySelectorAll('.lamar_info span')[0]
     .addEventListener('click', ()=>{
@@ -37,4 +38,4 @@
             menu_flutu.classList.add('show-menu_flutu');
             bar.style.color = 'gray';
         }        
-    })
+    })  
