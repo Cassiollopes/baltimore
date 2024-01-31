@@ -1,0 +1,95 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Video</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <div id="logo"><a href=>prime video</a></div>
+            <ul class="links">                
+                <li class="abrir">
+                    <a href="https://www.primevideo.com/region/na/storefront/ref=atv_hom_pri_c_9zZ8D2_hm_hom">Home <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+                    <div class="show-op">
+                        <ul>
+                            <li><a href="https://www.primevideo.com/region/na/storefront/ref=atv_hom_pri_c_9zZ8D2_hm_hom">All</a></li>
+                            <li><a href="#">Movies</a></li>
+                            <li><a href="#">TV Shows</a></li>
+                            <li><a href="#">Sports</a></li>
+                        </ul>
+                    </div>   
+                </li>
+
+                <li class="abrir">
+                    <a href="#">Store <i class="fa-solid fa-chevron-down"></i></a>
+                    <div class="show-op" id="o">
+                        <ul>
+                            <li><a href="#">All</a></li>
+                            <li><a href="#">Rente or Buy</a></li>
+                            <li><a href="#">Channels</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">Live TV</a></li>
+                <li><a href="#">Categories <i class="fa-solid fa-chevron-down"></i></a></li>
+                <li><a href="#">My Stuff <i class="fa-solid fa-chevron-down"></i></a></li>
+            </ul>
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+    </header>
+
+    <div class="imgP">
+        <div class="info-img">
+            <div class="info-img-1">
+                <h1>Giannis Antetokounmpo</h1>
+            </div>
+            <div class="info-img-1" id="oi">
+                <h2>The Greak Freak</h2>
+            </div>
+
+            <div class="info-img-1" id="icones">
+                <div class="mais">
+                    <a href="#"><i class="fa-solid fa-play"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="img">
+            <img src="https://images8.alphacoders.com/123/1236651.jpg" alt="">
+        </div>
+        <div class="cmP"></div>
+    </div>
+
+</body>
+
+<script>
+        document.querySelectorAll('.abrir').forEach((item, index)=>{
+            document.querySelectorAll('.abrir')[index].addEventListener('mouseover', ()=>{
+            var show = document.querySelectorAll('.show-op')[index];
+
+            show.classList.add('animacao-show');
+
+            document.querySelectorAll('.abrir')[index].addEventListener('mouseout', ()=>{
+                show.classList.remove('animacao-show');
+            })
+        })
+        })  
+
+        document.querySelectorAll('.info-img-1').forEach((item, index)=>{
+            setTimeout(()=>{
+                document.querySelectorAll('.info-img-1')[index]
+                .classList.add('animacao-img-1');
+            },500)
+        })
+
+        setTimeout(()=>{
+                document.querySelector('.cmP')
+                .classList.add('animacao-cmP');
+            },500)
+</script>
+
+</html>

@@ -128,13 +128,13 @@ header{
 }
 
 .menu_flutu{
+    position: absolute;
     display: none;
     width: 200px;
     height: 200px;
+    top: 70px;
     background-color: rgba(255, 255, 255, 0.386);
     backdrop-filter: blur(10px);
-    position: absolute;
-    top: 70px;
     border-radius: 10px;   
     transition: 1s;
     transform: translateX(-120%);
@@ -196,7 +196,7 @@ header{
     }
 
     .menu_flutu{
-        display: block;
+        display: block; 
     }
 }
 .qb{

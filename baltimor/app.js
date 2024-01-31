@@ -27,7 +27,7 @@
     })
 
     document.querySelector('.icone_bar')
-    .addEventListener('click', ()=>{
+    .addEventListener('mouseover', ()=>{
         var menu_flutu = document.querySelector('.menu_flutu');
         var bar = document.querySelector('.icone_bar');
 
