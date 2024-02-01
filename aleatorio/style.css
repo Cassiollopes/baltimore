@@ -5,6 +5,7 @@ body{
 *{
     padding: 0px;
     margin: 0px;
+    box-sizing: border-box;
 }
 
 li{
@@ -98,11 +99,11 @@ nav li > a{
 
 .fotos:nth-child(1) .imagens{
     background-image: url(https://i.pinimg.com/originals/9c/d9/62/9cd962c9e385621463233e8f98021d96.jpg);
-    background-size: 90%;
     background-position: 100% 27%;
 }
 
 .fotos:nth-child(2) > .imagens{
+
     background-image: url(https://cdn.nba.com/manage/2021/07/giannis-antetokounmpo-trophy-iso.jpg);
 }
 
@@ -133,8 +134,8 @@ nav li > a{
 .imagens{
     height: 400px;
     width: 100%;
-    background-size: 100vh, 100vw;
-    background-position: 30% 10%;
+    background-size: cover;
+    background-position: center;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     -webkit-mask-image: linear-gradient(to right, transparent 0%, black 70%);
@@ -292,84 +293,37 @@ nav li > a{
         border-radius: 10px;
         -webkit-mask-image: linear-gradient(to top, transparent 0%, black 70%);
     }
-
-    .fotos:nth-child(1) .imagens{
-        background-image: url(https://i.pinimg.com/originals/9c/d9/62/9cd962c9e385621463233e8f98021d96.jpg);
-        background-size: 150%;
-        background-position: 40% 30%;
-    }
-    
-    .fotos:nth-child(2) .imagens{
-        background-image: url(https://cdn.nba.com/manage/2021/07/giannis-antetokounmpo-trophy-iso.jpg);
-        background-size: 300%;
-        background-position: 45%;    
-    }
-    
-    .fotos:nth-child(3) .imagens{
-        background-image: url(https://www.si.com/.image/ar_4:3%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cg_xy_center%2Cq_auto:good%2Cw_1200%2Cx_1631%2Cy_498/MTkzNjI4NjA5MzcyNDk3Mzky/usatsi_7482196.jpg);
-        background-size: 210%;
-        background-position: 30%;
-    }
 }
 
-#ponta-a-ponta{
-    display: flex;
+.ponta-a-ponta{
     background-color: rgba(128, 128, 128, 0.078);
     height: 600px;
     max-width: 100%;
     margin-top: 60px;
     padding: 60px 0px;
-    align-items: center;
-}
-
-.containerI{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 100%;
-    height: 100%;
-    margin: 0 auto;
-    overflow-X: scroll;
 }
 
 .img{
-    height: 100%;
+    float: left;
+    width: calc(100% / 5);
+}
+
+.img-img{
     width: 100%;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
+    padding-top: 100%;
+    padding-bottom: 100%;
+    background-color: #ccc;
+    border-right: 3px solid #1C1C1C;
+    background-image: url(https://www.itl.cat/pngfile/big/174-1744506_giannis-antetokounmpo-images-giannis-antetokounmpo-giannis-antetokounmpo.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.estac{
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    width: 220px;
-    height: 100px;
-    margin-top: 200px;
-    gap: 1rem;
-    padding: 10px;
-    background-color: rgba(0, 0, 0, 0.225);
-    box-shadow: 0px 0px 10px black;
-    opacity: 0;
-    transition: opacity 1s, width 1s, height .5s .5s;
+.img:nth-child(2) .img-img{
+    background-image: url(https://www.quintoquartobr.com/wp-content/uploads/2023/01/Brew-Hoop.png);
 }
 
-.anim-estac{
-    transition: opacity 1s, width 1s, height .5s .5s;
-    opacity: 1;
-    width: 285px;
-    height: 200px;
-}
-
-.estac p{
-    font-size: 2rem;
-    font-weight: bold;
-    color: white;
-}
-
-.img:hover{
-    filter: drop-shadow(0px 0px 20px black);
-    scale: 1.03;
-    transition: filter 1s, scale 2s;
+.img:nth-child(5) .img-img{
+    border-right: 0px;
 }
