@@ -73,6 +73,7 @@ nav li a:hover{
 }
 
 .nav-mo li a{
+    text-transform: uppercase;
     color: #556877;
     width: 100%;
     padding: .7rem;
@@ -83,7 +84,7 @@ nav li a:hover{
 
 .nav-mo li a:hover{
     color: rgb(255, 255, 255);
-    background-color: rgba(0, 0, 0, 0.175);
+    background-color: rgba(0, 0, 0, 0.09);
     transition: 1s;
 }
 
@@ -133,6 +134,7 @@ section.servicos > .container{
     top: -30px;
     text-align: center;
     color: white;
+    padding-bottom: 30px;
 }
 
 .box-servico{
@@ -179,7 +181,7 @@ section.perfil > .container{
     justify-content: center;
     align-items: start;
     flex-wrap: wrap;
-    padding: 60px 1rem;
+    padding: 30px 1rem;
 }
 
 .perfil-img{
@@ -188,8 +190,8 @@ section.perfil > .container{
 
 .perfil-info{
     width: 50%;
-    flex: 1 1 calc(942px - 40%);
     text-align: justify;
+    flex: 1 1 calc(942px - 40%);
 }
 
 .perfil-info h2{
@@ -205,7 +207,7 @@ section.perfil > .container{
 
     .perfil-img{
         display: flex;
-        padding-bottom: 60px;
+        padding-bottom: 30px;
         width: 100%;
         align-items: center;
         justify-content: center;
@@ -243,10 +245,46 @@ section.perfil > .container{
 
 /************************************************/
 
+section.videos{
+    text-align: center;
+}
+
+.chev h2{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+
+.chev h2 i{
+    color: rgba(0, 0, 0, 0.115);
+    font-size: 15px;
+    padding-bottom: 1px;
+}
+
+.chev h2::before{
+    display: inline-block;
+    content: '';
+    height: 1px;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.052);
+}
+
+.chev h2::after{
+    display: inline-block;
+    content: '';
+    height: 1px;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.052);
+}
+
 section.videos > .container{
     max-width: 1200px;
     display: flex;
     gap: 2rem;
+    padding-top: 30px;
     padding-inline:1rem;
 }
 
@@ -263,7 +301,7 @@ section.videos > .container{
     top: 0px;
     width: 100%;
     height: 100%;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.437);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.344);
 }
 
 /************************************************/
