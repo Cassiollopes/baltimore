@@ -18,8 +18,8 @@
                 <ul>
                     <li><a href="#perfil">quem sou eu?</a></li>
                     <li><a href="#tratamentos">tratamentos</a></li>
-                    <li><a href="#">depoimentos</a></li>
-                    <li><a href="#">contato</a></li>
+                    <li><a href="#depoimentos">depoimentos</a></li>
+                    <li><a href="#contato">contato</a></li>
                 </ul>
                 <li class="bar"><i class="fa-solid fa-bars"></i></li>
             </nav>
@@ -28,8 +28,8 @@
                 <ul>
                     <li><a href="#perfil">quem sou eu?</a></li>
                     <li><a href="#tratamentos">tratamentos</a></li>
-                    <li><a href="#">depoimentos</a></li>
-                    <li><a href="#">contato</a></li>
+                    <li><a href="#depoimentos">depoimentos</a></li>
+                    <li><a href="#contato">contato</a></li>
                 </ul>
             </div>
         </div>
@@ -168,6 +168,126 @@
             </div>
         </div>
     </section>
+
+    <section class="depoimentos" id="depoimentos">
+        <div class="titulo">depoimentos</div>
+        <div class="container">
+            <div class="depoimento">
+                <div class="texto">
+                    <p>"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque cupiditate at ad quae dolores maxime numquam doloribus vero, ipsum placeat quisquam praesentium nisi impedit possimus nobis quas. Maxime, inventore vitae"</p>
+                </div>
+                <div class="pessoa">
+                    <div class="foto"><img src="imagens/depoimento1.png" alt=""></div>
+                    <p>- Maria Augusta Santos</p>
+                </div>            
+            </div>
+        </div>
+    </section>
+
+    <section class="redes">
+        <div class="container">
+            <div class="instagram">
+                <img src="imagens/inst.png" alt="">
+                <p>Acesse o Instagram para ver mais fotos</p>
+                <p>@doutora.fernanda</p>
+            </div>
+            <div class="galeria">
+                <div class="galeria-single">
+                    <div class="img-galeria"></div>
+                </div>
+
+                <div class="galeria-single">
+                    <div class="img-galeria"></div>
+                </div>
+
+                <div class="galeria-single">
+                    <div class="img-galeria"></div>
+                </div>
+
+                <div class="galeria-single">
+                    <div class="img-galeria"></div>
+                </div>
+
+                <div class="galeria-single">
+                    <div class="img-galeria"></div>
+                </div>
+
+                <div class="galeria-single">
+                    <div class="img-galeria"></div>
+                </div>
+
+                <div class="galeria-single">
+                    <div class="img-galeria"></div>
+                </div>
+
+                <div class="galeria-single">
+                    <div class="img-galeria"></div>
+                </div>
+
+                <div class="galeria-single">
+                    <div class="img-galeria"></div>
+                </div>
+            </div>
+            <div class="facebook">
+                <img src="imagens/fb.png" alt="">
+                <p>Acesse o facebook para ver mais fotos</p>
+                <p>Doutora Fernanda</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="form" id="contato">
+        <div class="titulo">Contato</div>
+        <div class="container">
+            <div class="form-wraper w100">
+                <span>Nome:</span>
+                <input placeholder="Nome*" name="Nome" type="text">
+            </div>
+            <div class="a">
+                <div class="form-wraper w50">
+                    <span>E-mail:</span>
+                    <input placeholder="E-mail*" name="E-mail" type="text">
+                </div>
+                <div class="form-wraper w50">
+                    <span>Telefone:</span>
+                    <input placeholder="Telefone*" name="Telefone" type="text">
+                </div>
+            </div>
+            <div class="form-wraper w100">
+                <span>Mensagem:</span>
+                <input placeholder="Mensagem*" name="Mensagem" type="text">
+            </div>
+            <div class="form-wraper w100 enviar" style="text-align: center;">
+                <input type="submit" name="acao" value="Enviar">
+            </div>
+        </div>
+    </section>
+
+    <section class="rodape">
+        <div class="container">
+            <div class="info">
+                <h2>telefones</h2>
+                <p>(37)999123134
+                    <br>
+                    (37)988123134
+                </p>
+            </div>
+            <div class="info">
+                <h2>horarios</h2>
+                <p>Segunda a Sexta
+                    <br>
+                    9:00 as 17:00
+                </p>
+            </div>
+            <div class="info">
+                <h2>localizacao</h2>
+                <p>Av. Afonso Neto
+                    <br>
+                    Num. 1036, Centro
+                </p>
+            </div>
+        </div>
+    </section>
 </body>
     <script>
         document.querySelector('.bar').addEventListener('click', ()=>{
@@ -185,6 +305,5 @@
         document.querySelector('.nav-mo').addEventListener('mouseout', ()=>{
             document.querySelector('.nav-mo').classList.remove('anim-nav');
         })
-
     </script>
 </html>

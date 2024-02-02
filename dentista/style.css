@@ -284,8 +284,7 @@ section.videos > .container{
     max-width: 1200px;
     display: flex;
     gap: 2rem;
-    padding-top: 30px;
-    padding-inline:1rem;
+    padding: 30px 1rem;
 }
 
 .video{
@@ -346,5 +345,231 @@ section.tratamentos > .container{
 @media(max-width:942px){
     .tratamento{
         flex: 1 1 350px;
+    }
+}
+
+/************************************************/
+
+section.depoimentos{
+    text-align: center;
+    padding-inline: 1rem;
+    padding-bottom: 60px;
+}
+
+section.depoimentos .titulo{
+    color: #4C6676;
+    font-size: 2rem;
+}
+
+section.depoimentos > .container{
+    max-width: 700px;
+}
+
+.depoimento .texto{
+    color: gray;
+    font-size: 15px;
+}
+
+.depoimento .pessoa{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+.foto img{
+    width: 80%;
+}
+
+/************************************************/
+
+section.redes > .container{
+    max-width: 100%;
+}
+
+.instagram{
+    background-color: rgb(151, 164, 174);
+    text-align: center;
+    padding: 40px 1rem;
+    width: 100%;
+}
+
+section.redes p{
+    margin-top: 10px;
+    color: white;
+}
+
+.galeria-single{
+    float: left;
+    width: calc(100% / 9);
+}
+
+.img-galeria{
+    width: 100%;
+    padding-top: 100%;
+    background-color: gray;
+    border: 1px solid white;
+}
+
+.facebook{
+    background-color: #576976;
+    text-align: center;
+    padding: 40px 1rem;
+    width: 100%;
+}
+
+.facebook img{
+    padding-top: 40px;
+}
+
+@media(max-width:1024px){
+    .galeria-single{
+        float: left;
+        width: calc(100% / 6);
+    }
+
+    .galeria div:nth-of-type(1n+7){
+        display: none;
+    }
+}
+
+@media(max-width:700px){
+    .galeria-single{
+        float: left;
+        width: calc(100% / 4);
+    }
+
+    .galeria div:nth-of-type(1n+5){
+        display: none;
+    }
+}
+
+/************************************************/
+
+section.form{
+    text-align: center;
+    padding: 60px 1rem;
+}
+
+section.form > .titulo{
+    color: #4C6676;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+section.form > .container{
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+    gap: 1rem;
+}
+
+.a{
+    display: flex;
+    gap: 1rem;
+}
+
+.form-wraper span{
+    font-size: 1.1rem;
+    color: #4C6676;
+}
+
+.form-wraper input[type=text]{
+    width: calc(100%);
+    border: 2px solid #4C6676;
+    border-radius: 15px;
+    margin-top: 5px;
+}
+
+.form-wraper input{
+    font-size: 15px;
+    padding: 5px;
+}
+
+.form-wraper input[name=Mensagem]{
+    text-align: center;
+    height: 200px;
+}
+
+.w100{
+    width: 100%;
+}
+
+.w50{
+    width: 50%;
+}
+
+.form-wraper input[type=submit]{
+    text-transform: uppercase;
+    width: calc(100%);
+    border: 2px solid #4C6676;
+    border-radius: 15px;
+    margin-top: 5px;
+    color: #4C6676;
+    transition: 1s;
+}
+
+.form-wraper input[type=submit]:hover{
+    width: calc(100%);
+    border: 2px solid #F0F0F0;
+    background-color: #4C6676;
+    transition: 1s;
+    color: #F0F0F0;
+    scale: 1.05;
+}
+
+.form-wraper input[type=submit]:active{
+    scale: 0.95;
+    transition: .2s;
+}
+
+
+/************************************************/
+
+section.rodape{
+    background-color: #658193;
+}
+
+section.rodape > .container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 1rem;
+    gap: 20%;
+}
+
+.info{
+    width: 20%;
+    flex: 1;
+}
+
+.info h2{
+    text-transform: uppercase;
+}
+
+.info p{
+    margin-top: 10px;
+    text-align: end;
+}
+
+@media(max-width:950px){
+    section.rodape > .container{
+        gap: 10%;
+    }
+}
+
+
+@media(max-width:700px){
+    section.rodape > .container{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .info{
+        margin-bottom: 40px;
+        width: 70%;
     }
 }
