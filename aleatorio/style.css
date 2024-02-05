@@ -265,11 +265,6 @@ nav li > a{
         align-self: flex-end;
     }
 
-    .fotos:hover .a{
-        scale: 1.05;
-        transition: 1s;
-    }
-
     @keyframes info-1{
         0%{
             opacity: 0;
