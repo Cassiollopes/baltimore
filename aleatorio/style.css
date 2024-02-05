@@ -104,12 +104,10 @@ nav li > a{
 }
 
 .fotos:nth-child(1) .imagens > .img-1{
-    background-image: url(https://i.pinimg.com/originals/9c/d9/62/9cd962c9e385621463233e8f98021d96.jpg);
-    background-position: 100% 27%;
+    background-image: url(https://www.basketuniverso.it/wp-content/uploads/2018/12/giannisfistpump.png);
 }
 
 .fotos:nth-child(2) > .imagens > .img-1{
-
     background-image: url(https://cdn.nba.com/manage/2021/07/giannis-antetokounmpo-trophy-iso.jpg);
 }
 
