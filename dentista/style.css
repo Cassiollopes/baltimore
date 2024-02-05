@@ -460,6 +460,10 @@ section.form > .titulo{
 
 section.form > .container{
     max-width: 500px;
+    
+}
+
+#form{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -477,7 +481,7 @@ section.form > .container{
     color: #4C6676;
 }
 
-.form-wraper input[type=text]{
+.form-wraper input{
     width: calc(100%);
     border: 2px solid #4C6676;
     border-radius: 15px;
@@ -489,7 +493,7 @@ section.form > .container{
     padding: 5px;
 }
 
-.form-wraper input[name=Mensagem]{
+.form-wraper input[id=mensagem]{
     text-align: center;
     height: 200px;
 }
@@ -502,7 +506,9 @@ section.form > .container{
     width: 50%;
 }
 
-.form-wraper input[type=submit]{
+.form-wraper button{
+    font-size: 15px;
+    padding: 5px;
     text-transform: uppercase;
     width: calc(100%);
     border: 2px solid #4C6676;
@@ -512,16 +518,15 @@ section.form > .container{
     transition: 1s;
 }
 
-.form-wraper input[type=submit]:hover{
-    width: calc(100%);
+.form-wraper button:hover{
     border: 2px solid #F0F0F0;
     background-color: #4C6676;
-    transition: 1s;
     color: #F0F0F0;
     scale: 1.05;
+    transition: 1s;
 }
 
-.form-wraper input[type=submit]:active{
+.form-wraper button:active{
     scale: 0.95;
     transition: .2s;
 }

@@ -34,6 +34,7 @@ header{
 #bar{
     font-size: 2rem;
     font-weight: normal;
+    cursor: pointer;
 }
 
 nav{
@@ -232,7 +233,7 @@ nav li > a{
 .chevron i:hover{
     filter: drop-shadow(0px 0px 10px white);
     cursor: pointer;
-    scale: 2;
+    scale: 1.7;
     transition: 1s;
     transform: rotateY(180deg);
 }
@@ -241,7 +242,7 @@ nav li > a{
     filter: drop-shadow(0px 0px 10px white);
     cursor: pointer;
     transition: 1s;
-    transform: rotateY(180deg) scale(2,2);
+    transform: rotateY(180deg) scale(1.7,1.7);
 }
 
 .chevron i:active{
@@ -297,21 +298,23 @@ nav li > a{
 
 .ponta-a-ponta{
     background-color: rgba(128, 128, 128, 0.078);
-    height: 600px;
-    max-width: 100%;
     margin-top: 60px;
+}
+
+.img-wraper{
+    max-width: 100%;
+    width: 100%;
     padding: 60px 0px;
 }
 
 .img{
-    float: left;
-    width: calc(100% / 5);
+    width: 100%;
 }
 
 .img-img{
-    width: 100%;
-    padding-top: 100%;
-    padding-bottom: 100%;
+    float: left;
+    width: calc(100% / 5);
+    padding-top: 40%;
     background-color: #ccc;
     border-right: 3px solid #1C1C1C;
     background-image: url(https://www.itl.cat/pngfile/big/174-1744506_giannis-antetokounmpo-images-giannis-antetokounmpo-giannis-antetokounmpo.png);
@@ -326,4 +329,29 @@ nav li > a{
 
 .img:nth-child(5) .img-img{
     border-right: 0px;
+}
+
+@media(max-width:800px){
+    .img-wraper{
+        max-width: 100%;
+        width: 100%;
+        padding: 60px 0px;
+        overflow: scroll;
+    }
+    
+    .img{
+        width: 200%;
+    }
+    
+    .img-img{
+        float: left;
+        width: calc(40% * (100 / 200) *1);
+        padding-top: 50%;
+        background-color: #ccc;
+        border-right: 3px solid #1C1C1C;
+        background-image: url(https://www.itl.cat/pngfile/big/174-1744506_giannis-antetokounmpo-images-giannis-antetokounmpo-giannis-antetokounmpo.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
 }
