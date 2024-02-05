@@ -1,4 +1,4 @@
-html{
+*{
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
@@ -80,6 +80,7 @@ nav li > a{
 }
 
 .fotos{
+    cursor: pointer;
     position: relative;
     width: 100%;
     height: 100%;
@@ -102,17 +103,17 @@ nav li > a{
     display: flex;
 }
 
-.fotos:nth-child(1) .imagens{
+.fotos:nth-child(1) .imagens > .img-1{
     background-image: url(https://i.pinimg.com/originals/9c/d9/62/9cd962c9e385621463233e8f98021d96.jpg);
     background-position: 100% 27%;
 }
 
-.fotos:nth-child(2) > .imagens{
+.fotos:nth-child(2) > .imagens > .img-1{
 
     background-image: url(https://cdn.nba.com/manage/2021/07/giannis-antetokounmpo-trophy-iso.jpg);
 }
 
-.fotos:nth-child(3) > .imagens{
+.fotos:nth-child(3) > .imagens > .img-1{
     background-image: url(https://www.si.com/.image/ar_4:3%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cg_xy_center%2Cq_auto:good%2Cw_1200%2Cx_1631%2Cy_498/MTkzNjI4NjA5MzcyNDk3Mzky/usatsi_7482196.jpg);
 }
 
@@ -137,18 +138,20 @@ nav li > a{
 }
 
 .imagens{
+    display: flex;
+    align-items: center;
     height: 400px;
     width: 100%;
-    background-size: cover;
-    background-position: center;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     -webkit-mask-image: linear-gradient(to right, transparent 0%, black 70%);
 }
 
-.imagens img{
+.img-1{
+    height: 400px;
     width: 100%;
-    height: 100%;
+    background-size: cover;
+    background-position: center;
 }
 
 .info{
@@ -181,29 +184,16 @@ nav li > a{
 
 .a{
     margin-top: 30px;
-    cursor: pointer;
-    color: gray;
     font-size: 2rem;
+    color: gray;
+}
+
+.a a{
+    display: flex;
 }
 
 .a i{
     margin-right: .5rem;
-    transition: 1s;
-}
-
-.a p{
-    transition: 1s;
-}
-
-.a:hover i{
-    color: white;
-    scale: 1.2;
-    transition: 1s;
-}
-
-.a:hover p{
-    color: darkorange;
-    transition: 1s;
 }
 
 .chevron{
@@ -270,17 +260,16 @@ nav li > a{
         justify-content: center;
     }
 
-    .fotos:hover .info > .a > p{
-        color: white;
-        scale: 1.03;
-        transition: 1s;
-    }
-
     .info{
         position: absolute;
         padding: 1rem;
         margin: 0 auto;
         align-self: flex-end;
+    }
+
+    .fotos:hover .a{
+        scale: 1.05;
+        transition: 1s;
     }
 
     @keyframes info-1{
