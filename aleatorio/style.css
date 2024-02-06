@@ -182,8 +182,9 @@ nav li > a{
 
 .a{
     margin-top: 30px;
-    font-size: min(2rem, 8vw);
+    font-size: 2rem;
     color: gray;
+    transition: 1s;
 }
 
 .a a{
@@ -263,6 +264,14 @@ nav li > a{
         padding: 1rem;
         margin: 0 auto;
         align-self: flex-end;
+    }
+
+    .info > h1{
+        transition: 1s;
+    }
+
+    .info > h2{
+        transition: 3s;
     }
 
     @keyframes info-1{

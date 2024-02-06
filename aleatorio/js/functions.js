@@ -33,4 +33,3 @@ $(function(){
         $('.img-1').css('height', '400px').css('transition', '1s');
     })
 });
-
