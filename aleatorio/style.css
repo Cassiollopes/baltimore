@@ -182,7 +182,7 @@ nav li > a{
 
 .a{
     margin-top: 30px;
-    font-size: 2rem;
+    font-size: min(2rem, 8vw);
     color: gray;
 }
 
@@ -288,19 +288,23 @@ nav li > a{
 }
 
 .img-wraper{
+    height: 600px;
     max-width: 100%;
-    width: 100%;
+    width: 100%;    
     padding: 60px 0px;
+    display: flex;
 }
 
 .img{
-    width: 100%;
+    height: 100%;
+    width: calc(100% / 5); 
 }
 
 .img-img{
-    float: left;
-    width: calc(100% / 5);
-    padding-top: 40%;
+    justify-content: center;
+    display: flex;
+    height: 100%;
+    width: 100%;
     background-color: #ccc;
     border-right: 3px solid #1C1C1C;
     background-image: url(https://www.itl.cat/pngfile/big/174-1744506_giannis-antetokounmpo-images-giannis-antetokounmpo-giannis-antetokounmpo.png);
@@ -317,27 +321,21 @@ nav li > a{
     border-right: 0px;
 }
 
-@media(max-width:800px){
-    .img-wraper{
-        max-width: 100%;
+.info-s{
+    align-self: center;
+}
+
+@media(max-width:800px){  
+
+    .containerI{
         width: 100%;
-        padding: 60px 0px;
+        max-width: 100%;
         overflow: scroll;
     }
-    
-    .img{
+
+    .img-wraper{
+        max-width: 200%;
         width: 200%;
-    }
-    
-    .img-img{
-        float: left;
-        width: calc(40% * (100 / 200) *1);
-        padding-top: 50%;
-        background-color: #ccc;
-        border-right: 3px solid #1C1C1C;
-        background-image: url(https://www.itl.cat/pngfile/big/174-1744506_giannis-antetokounmpo-images-giannis-antetokounmpo-giannis-antetokounmpo.png);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
+        padding: 60px 0px;
     }
 }
