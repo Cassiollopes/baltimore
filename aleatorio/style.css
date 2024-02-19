@@ -3,7 +3,7 @@
 }
 
 body{
-    background-color: #000000eb;
+    background-color: #000000e8;
 }
 
 *{
@@ -21,13 +21,7 @@ a{
     color: inherit;
 }
 
-#fundo{
-    background-image: url(https://www.sites-de-apostas.net/wp-content/uploads/2022/11/milwaukee-bucks-imago1017762154h.jpg);
-}
-
 header{
-    backdrop-filter: blur(20px);
-    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.038);
     padding-inline: 1rem;
 }
 
@@ -305,12 +299,12 @@ nav li > a{
 }
 
 .img{
+    display: flex;
     height: 100%;
     width: calc(100% / 5); 
 }
 
 .img-img{
-    justify-content: center;
     display: flex;
     height: 100%;
     width: 100%;
@@ -326,25 +320,230 @@ nav li > a{
     background-image: url(https://www.quintoquartobr.com/wp-content/uploads/2023/01/Brew-Hoop.png);
 }
 
+.img:nth-child(3) .img-img{
+    background-image: url(https://www.sports24ghana.com/wp-content/uploads/2021/07/Giannis-Antetokounmpo...jpg);
+}
+
 .img:nth-child(5) .img-img{
     border-right: 0px;
 }
 
-.info-s{
-    align-self: center;
+@keyframes a{
+    0%{
+        opacity: 0;
+        transform: translateY(80%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(-30%);
+    }
+}
+
+.ponta-a-ponta > .chevron{
+    display: none;
 }
 
 @media(max-width:800px){  
 
+    .ponta-a-ponta{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .ponta-a-ponta > .chevron{
+        position: absolute;
+        z-index: 1;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .ponta-a-ponta > .chevron i{
+        padding: 5px;
+    }
+
+
     .containerI{
+        z-index: 0;
         width: 100%;
         max-width: 100%;
-        overflow: scroll;
+        overflow-x: scroll;
     }
 
     .img-wraper{
-        max-width: 200%;
-        width: 200%;
+        z-index: 0;
+        max-width: 240%;
+        width: 240%;
+        height: 240px;
         padding: 60px 0px;
+        transition: 1s;
+        margin-left: .6rem;
+    }
+
+    .img-wraper:hover{
+        transform: translateX(-19%);
+        transition: 1s;
+    }
+
+    .img{
+        z-index: 0;
+        padding: .5rem;
+    }
+
+    .img-img{
+        border-radius: 15px;
+    }
+}
+
+/***********************************************************/
+
+section.giannis{
+    padding: 60px 0px;
+}
+
+section.giannis > .container-1{
+    max-width: 1200px;
+    height: 600px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.g-img{
+    height: 90%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-mask-image: linear-gradient(to top, transparent 0%, black 70%);
+}
+
+.img-g{
+    z-index:1;
+    height: 100%;
+    width: 100%;
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-image: url(https://uniqrenders.com/Uploads/11-6-2023/2301/giannis-antetokounmpo-milwaukee-bucks-nba-greece-greek-basketball-players-uniqrenders.com.png);
+    animation: gi 4s infinite;
+}
+
+@keyframes gi{
+    0%{
+        transform: translateX(0%);
+    }
+    50%{
+        transform: translateX(-5%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+.img-info{
+    position: absolute;
+    align-self: center;
+    font-size: min(12rem, 19vw);
+    color: #14141400;
+    z-index:2;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    animation: over 4s infinite;
+}
+
+@keyframes over{
+    0%{
+        transform: translateY(0%);
+    }
+    50%{
+        transform: translateY(-50%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+
+.back{
+    z-index:0;
+    color: rgba(255, 255, 255, 0.545);
+    -webkit-text-stroke-width: 0px;
+    animation: back 4s infinite;
+}
+
+@keyframes back{
+    0%{
+        transform: translateY(0%);
+    }
+    50%{
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+
+.g-info{
+    color: rgb(255, 255, 255);
+    width: 60%;
+    text-align: justify;
+    flex: 1 1 calc(300px);
+    position: absolute;
+    right: 0px;
+    align-self: center;
+    transition: 1s;
+}
+
+.g-info:hover{
+    scale: 1.05;
+    transition: 1s;
+    transform: translateX(-20%);
+}
+
+.g-info h1{
+    text-align: end;
+    padding-right: 1rem;
+    color: white;
+    font-size: min(5rem, 20vw);
+}
+
+.g-info p{
+    background-color: rgba(255, 255, 255, 0.025);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 1rem;
+}
+
+@media(max-width: 700px){
+    section.giannis{
+        margin: 0px;
+    }
+
+    .g-img{
+        width: 100%;
+    }
+    
+    .g-info h1{
+        text-align: center;
+    }
+
+    .img-info{
+        font-size: min(12rem, 43vw);
+    }
+
+    .g-info{
+        position: initial;
+        padding-left: 0px;
+    }
+
+    .g-info:hover{
+        scale: 1;
+        transition: 1s;
+        transform: translateX(0%);
     }
 }

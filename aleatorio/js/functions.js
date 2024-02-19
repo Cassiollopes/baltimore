@@ -33,3 +33,15 @@ $(function(){
         $('.img-1').css('height', '400px').css('transition', '1s');
     })
 });
+
+$(function(){
+    $('.ponta-a-ponta > .chevron #next').click(function(){
+        $('.img-wraper').css('transform', 'translateX(-19%)')
+        .css('transition', '1s');
+    })
+    $('.ponta-a-ponta > .chevron #back').click(function(){
+        $('.img-wraper').css('transform', 'translateX(0%)')
+        .css('transition', '1s');
+    })
+});
+
